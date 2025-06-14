@@ -18,14 +18,17 @@ namespace AE
         private bool _isInteractable = true;
         public bool IsInteractable { get => _isInteractable; set => _isInteractable = value; }
 
-        public void Interact(Transform initiator)
+        public void Interact(Transform initiator = null)
         {
             Switch();
         }
         #endregion
 
+        #region Events
+        [SerializeField] private UnityEvent onStateChange;
+        #endregion
+
         #region Variables
-        public UnityEvent onStateChange;
         public bool state;
         #endregion
 
