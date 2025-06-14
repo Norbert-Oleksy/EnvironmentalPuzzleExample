@@ -41,7 +41,7 @@ namespace AE
             _rotating.canceled += _ => rotatingVector = Vector2.zero;
 
             _interact = _inputs.Player.Interact;
-            _interact.performed += _ => OnInteraction?.Invoke();
+            _interact.started += _ => OnInteraction?.Invoke();
         }
 
         private void OnEnable()

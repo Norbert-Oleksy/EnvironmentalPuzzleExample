@@ -1,8 +1,11 @@
 
+using UnityEngine;
+
 namespace AE
 {
     public interface IInteractable
     {
-        public void Interact();
+        public bool IsInteractable { get; }
+        public void Interact(Transform initiator);
     }
 }
