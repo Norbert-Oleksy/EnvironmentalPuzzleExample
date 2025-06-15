@@ -43,7 +43,7 @@ namespace AE
         #region Unity-API
         private void Awake()
         {
-            _parts = FindObjectsOfType<PuzzlePart>().ToList();
+            _parts = FindObjectsByType<PuzzlePart>(FindObjectsSortMode.None).ToList();
         }
         #endregion
     }

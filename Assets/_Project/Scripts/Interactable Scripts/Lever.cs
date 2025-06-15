@@ -25,7 +25,7 @@ namespace AE
         #endregion
 
         #region Events
-        [SerializeField] private UnityEvent onStateChange;
+        public UnityEvent OnStateChange;
         #endregion
 
         #region Variables
@@ -37,7 +37,7 @@ namespace AE
         {
             state = !state;
             ChangeLeverPosition();
-            onStateChange?.Invoke();
+            OnStateChange?.Invoke();
         }
 
         private void ChangeLeverPosition()

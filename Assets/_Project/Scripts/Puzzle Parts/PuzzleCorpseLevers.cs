@@ -3,6 +3,10 @@ using System.Collections.Generic;
 
 namespace AE
 {
+    /// <summary>
+    /// Puzzle step that is solved by setting a group of levers to their target states.
+    /// The player must toggle each lever to match its expected value.
+    /// </summary>
     public class PuzzleCorpseLevers : PuzzlePart
     {
         #region SerializeFields
@@ -21,6 +25,11 @@ namespace AE
         public override void PrepareThisPart()
         {
             onComplete.AddListener(DisableAllLevers);
+
+            foreach(var l in _levers)
+            {
+                l.lever.OnStateChange.AddListener(EvaluateState);
+            }
         }
 
         private void DisableAllLevers()
