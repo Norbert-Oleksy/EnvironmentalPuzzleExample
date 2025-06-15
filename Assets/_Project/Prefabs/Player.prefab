@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1261003579265538381}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PickUpPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44,9 +44,9 @@ GameObject:
   - component: {fileID: 99508187223648690}
   - component: {fileID: 1112602765544662292}
   - component: {fileID: 7853328927699940035}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -152,7 +152,7 @@ GameObject:
   - component: {fileID: 7338579894062114865}
   - component: {fileID: 6979700778192326067}
   - component: {fileID: 7591784679878534667}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Camera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 4653624070562625493}
   - component: {fileID: 4938778099464195057}
   - component: {fileID: 2596943633453322290}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
