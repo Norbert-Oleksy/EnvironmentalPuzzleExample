@@ -6,8 +6,8 @@ namespace AE
     [RequireComponent(typeof(Collider))]
     public class ColliderLogicDelegate : MonoBehaviour
     {
-        #region Variables
-        private Collider _colider;
+        #region SerializeFields
+        [SerializeField] private Collider _colider;
         #endregion
 
         #region Events
@@ -40,7 +40,7 @@ namespace AE
         #region Unity-API
         private void Awake()
         {
-            _colider = GetComponent<Collider>();
+            if(_colider == null) _colider = GetComponent<Collider>();
         }
         #endregion
     }

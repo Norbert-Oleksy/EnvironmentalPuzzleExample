@@ -4518,6 +4518,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42134ba396fc8c48aa2f0c78baf4069, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _colider: {fileID: 429392561}
   OnCollisionEnterEvent:
     m_PersistentCalls:
       m_Calls: []
