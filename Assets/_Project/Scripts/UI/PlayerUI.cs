@@ -8,6 +8,7 @@ namespace AE
         #region SerializeFields
         [Header("UI Elements")]
         [SerializeField] private Image _cursor;
+        [SerializeField] private GameObject _finishMsg;
         #endregion
 
         #region Logic
@@ -22,6 +23,11 @@ namespace AE
             };
 
             _cursor.color = cursorColor;
+        }
+
+        public void ShowFinishMsg()
+        {
+            _finishMsg.SetActive(true);
         }
         #endregion
     }
